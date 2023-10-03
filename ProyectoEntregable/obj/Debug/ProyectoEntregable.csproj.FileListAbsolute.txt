@@ -1,0 +1,14 @@
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\bin\Debug\ProyectoEntregable.exe.config
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\bin\Debug\ProyectoEntregable.exe
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\bin\Debug\ProyectoEntregable.pdb
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.csproj.AssemblyReference.cache
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Properties.Resources.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.csproj.GenerateResource.cache
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.csproj.CoreCompileInputs.cache
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.exe
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.pdb
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.FormIndex.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ListadoProductos.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ListadoProductosVendidos.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ListadoUsuarios.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ListadoVentas.resources
