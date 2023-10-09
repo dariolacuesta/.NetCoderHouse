@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btn_create = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ListVentas = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Comentarios = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.ListVentas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,45 +58,56 @@
             this.btn_create.TabIndex = 1;
             this.btn_create.Text = "Crear";
             this.btn_create.UseVisualStyleBackColor = true;
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
-            // dataGridView1
+            // ListVentas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ListVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ListVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Comentarios,
             this.IdUsuario,
-            this.Editar,
-            this.Eliminar});
-            this.dataGridView1.Location = new System.Drawing.Point(32, 105);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(656, 150);
-            this.dataGridView1.TabIndex = 2;
+            this.btnEditar,
+            this.btnEliminar});
+            this.ListVentas.Location = new System.Drawing.Point(32, 105);
+            this.ListVentas.Name = "ListVentas";
+            this.ListVentas.Size = new System.Drawing.Size(656, 150);
+            this.ListVentas.TabIndex = 2;
+            this.ListVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Id
             // 
+            this.Id.DataPropertyName = "Id";
             this.Id.HeaderText = "Id";
             this.Id.Name = "Id";
             // 
             // Comentarios
             // 
+            this.Comentarios.DataPropertyName = "Comentarios";
             this.Comentarios.HeaderText = "Comentarios";
             this.Comentarios.Name = "Comentarios";
             // 
             // IdUsuario
             // 
+            this.IdUsuario.DataPropertyName = "IdUsuario";
             this.IdUsuario.HeaderText = "IdUsuario";
             this.IdUsuario.Name = "IdUsuario";
             // 
-            // Editar
+            // btnEditar
             // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Name = "Editar";
+            this.btnEditar.DataPropertyName = "btnEditar";
+            this.btnEditar.HeaderText = "Editar";
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Eliminar
+            // btnEliminar
             // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
+            this.btnEliminar.DataPropertyName = "btnEliminar";
+            this.btnEliminar.HeaderText = "Eliminar";
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnEliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // ListadoVentas
             // 
@@ -104,13 +115,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ListVentas);
             this.Controls.Add(this.btn_create);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "ListadoVentas";
             this.Text = "ListadoVentas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ListadoVentas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ListVentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,11 +132,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_create;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ListVentas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Comentarios;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Eliminar;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
     }
 }

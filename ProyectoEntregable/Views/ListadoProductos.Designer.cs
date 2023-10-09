@@ -33,14 +33,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.ListProducts = new System.Windows.Forms.DataGridView();
+            this.createProduct = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.createProduct = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ListProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,8 +72,8 @@
             this.Costo,
             this.PrecioVenta,
             this.Stock,
-            this.Editar,
-            this.Eliminar});
+            this.btnEditar,
+            this.btnEliminar});
             this.ListProducts.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ListProducts.Location = new System.Drawing.Point(31, 81);
             this.ListProducts.Name = "ListProducts";
@@ -91,6 +91,18 @@
             this.ListProducts.Size = new System.Drawing.Size(710, 328);
             this.ListProducts.TabIndex = 1;
             this.ListProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListProducts_CellContentClick);
+            // 
+            // createProduct
+            // 
+            this.createProduct.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.createProduct.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.createProduct.Location = new System.Drawing.Point(658, 25);
+            this.createProduct.Name = "createProduct";
+            this.createProduct.Size = new System.Drawing.Size(75, 23);
+            this.createProduct.TabIndex = 2;
+            this.createProduct.Text = "Crear";
+            this.createProduct.UseVisualStyleBackColor = false;
+            this.createProduct.Click += new System.EventHandler(this.createProduct_Click);
             // 
             // Id
             // 
@@ -122,28 +134,21 @@
             this.Stock.HeaderText = "Stock";
             this.Stock.Name = "Stock";
             // 
-            // Editar
+            // btnEditar
             // 
-            this.Editar.DataPropertyName = "btnEditar";
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Name = "Editar";
+            this.btnEditar.DataPropertyName = "btnEditar";
+            this.btnEditar.HeaderText = "Editar";
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Eliminar
+            // btnEliminar
             // 
-            this.Eliminar.DataPropertyName = "btnEliminar";
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            // 
-            // createProduct
-            // 
-            this.createProduct.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.createProduct.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.createProduct.Location = new System.Drawing.Point(658, 25);
-            this.createProduct.Name = "createProduct";
-            this.createProduct.Size = new System.Drawing.Size(75, 23);
-            this.createProduct.TabIndex = 2;
-            this.createProduct.Text = "Crear";
-            this.createProduct.UseVisualStyleBackColor = false;
+            this.btnEliminar.DataPropertyName = "btnEliminar";
+            this.btnEliminar.HeaderText = "Eliminar";
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnEliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // ListadoProductos
             // 
@@ -175,7 +180,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioVenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Eliminar;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
     }
 }

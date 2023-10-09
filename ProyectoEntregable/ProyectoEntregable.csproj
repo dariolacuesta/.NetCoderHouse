@@ -51,6 +51,24 @@
     <Compile Include="Context\ProductoVendidoContext.cs" />
     <Compile Include="Context\UserContext.cs" />
     <Compile Include="Context\VentaContext.cs" />
+    <Compile Include="Views\ProductEdit\CreateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductEdit\CreateProduct.Designer.cs">
+      <DependentUpon>CreateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductEdit\DeleteProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductEdit\DeleteProduct.Designer.cs">
+      <DependentUpon>DeleteProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductEdit\EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductEdit\EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FormIndex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +105,69 @@
     <Compile Include="Views\ListadoVentas.Designer.cs">
       <DependentUpon>ListadoVentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProductSoldEdit\EditSoldProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductSoldEdit\EditSoldProduct.Designer.cs">
+      <DependentUpon>EditSoldProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductSoldEdit\CreateSoldProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductSoldEdit\CreateSoldProduct.Designer.cs">
+      <DependentUpon>CreateSoldProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductSoldEdit\DeleteSoldProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductSoldEdit\DeleteSoldProduct.Designer.cs">
+      <DependentUpon>DeleteSoldProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SalesEdit\CreateSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SalesEdit\CreateSales.Designer.cs">
+      <DependentUpon>CreateSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SalesEdit\DeleteSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SalesEdit\DeleteSales.Designer.cs">
+      <DependentUpon>DeleteSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SalesEdit\SalesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SalesEdit\SalesEdit.Designer.cs">
+      <DependentUpon>SalesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserEdit\CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserEdit\CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserEdit\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserEdit\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserEdit\DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserEdit\DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\ProductEdit\CreateProduct.resx">
+      <DependentUpon>CreateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductEdit\DeleteProduct.resx">
+      <DependentUpon>DeleteProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductEdit\EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormIndex.resx">
       <DependentUpon>FormIndex.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +191,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ListadoVentas.resx">
       <DependentUpon>ListadoVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductSoldEdit\EditSoldProduct.resx">
+      <DependentUpon>EditSoldProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductSoldEdit\CreateSoldProduct.resx">
+      <DependentUpon>CreateSoldProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductSoldEdit\DeleteSoldProduct.resx">
+      <DependentUpon>DeleteSoldProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SalesEdit\CreateSales.resx">
+      <DependentUpon>CreateSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SalesEdit\DeleteSales.resx">
+      <DependentUpon>DeleteSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SalesEdit\SalesEdit.resx">
+      <DependentUpon>SalesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserEdit\CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserEdit\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserEdit\DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

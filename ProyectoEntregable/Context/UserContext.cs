@@ -130,6 +130,7 @@ namespace ProyectoEntregable.Context
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
                         cmd.Parameters.Add(new SqlParameter("Id", SqlDbType.Int) { Value = usuario.Id });
+                        cmd.ExecuteNonQuery();
                     }
                     conexion.Close();
                 }
@@ -147,7 +148,7 @@ namespace ProyectoEntregable.Context
             try
             {
 
-                using (SqlConnection conexion = new SqlConnection())
+                using (SqlConnection conexion = new SqlConnection(connection))
                 {
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conexion))

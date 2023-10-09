@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Constants;
 using ProyectoEntregable.Models;
 
@@ -133,6 +130,7 @@ namespace ProyectoEntregable.Context
                     using (SqlCommand cmd = new SqlCommand(query, conexion))
                     {
                         cmd.Parameters.Add(new SqlParameter("Id", SqlDbType.Int) { Value = producto.Id });
+                        cmd.ExecuteNonQuery();
                     }
                     conexion.Close();
                 }
@@ -150,7 +148,7 @@ namespace ProyectoEntregable.Context
             try
             {
 
-                using (SqlConnection conexion = new SqlConnection())
+                using (SqlConnection conexion = new SqlConnection(connection))
                 {
                     conexion.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conexion))

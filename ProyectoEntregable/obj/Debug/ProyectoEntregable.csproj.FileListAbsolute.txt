@@ -12,3 +12,15 @@ C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\Proy
 C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ListadoProductosVendidos.resources
 C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ListadoUsuarios.resources
 C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ListadoVentas.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.Edit.CreateProduct.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.Edit.DeleteProduct.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.Edit.EditProduct.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.Edit.CreateUser.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.Edit.EditeUser.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.Edit.DeleteUser.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ProductSoldEdit.EditSoldProduct.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ProductSoldEdit.CreateSoldProduct.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.ProductSoldEdit.DeleteSoldProduct.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.SaleView.CreateSales.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.SaleView.DeleteSales.resources
+C:\Users\Dario\source\repos\ProyectoEntregable\ProyectoEntregable\obj\Debug\ProyectoEntregable.Views.SaleView.SalesEdit.resources

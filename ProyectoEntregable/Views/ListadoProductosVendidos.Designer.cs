@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ListProducts = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Editar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.ListProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,51 +62,65 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Crear";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // ListProducts
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ListProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ListProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.IdProducto,
             this.Stock,
             this.IdVenta,
-            this.Editar,
-            this.Eliminar});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(713, 150);
-            this.dataGridView1.TabIndex = 2;
+            this.btnEditar,
+            this.btnEliminar});
+            this.ListProducts.Location = new System.Drawing.Point(16, 79);
+            this.ListProducts.Name = "ListProducts";
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.ListProducts.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.ListProducts.Size = new System.Drawing.Size(713, 150);
+            this.ListProducts.TabIndex = 2;
+            this.ListProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListProducts_CellContentClick);
             // 
             // Id
             // 
+            this.Id.DataPropertyName = "Id";
             this.Id.HeaderText = "Id";
             this.Id.Name = "Id";
             // 
             // IdProducto
             // 
+            this.IdProducto.DataPropertyName = "IdProducto";
             this.IdProducto.HeaderText = "IdProducto";
             this.IdProducto.Name = "IdProducto";
             // 
             // Stock
             // 
+            this.Stock.DataPropertyName = "Stock";
             this.Stock.HeaderText = "Stock";
             this.Stock.Name = "Stock";
             // 
             // IdVenta
             // 
+            this.IdVenta.DataPropertyName = "IdVenta";
             this.IdVenta.HeaderText = "IdVenta";
             this.IdVenta.Name = "IdVenta";
             // 
-            // Editar
+            // btnEditar
             // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Name = "Editar";
+            this.btnEditar.DataPropertyName = "btnEditar";
+            this.btnEditar.HeaderText = "Editar";
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Eliminar
+            // btnEliminar
             // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
+            this.btnEliminar.DataPropertyName = "btnEliminar";
+            this.btnEliminar.HeaderText = "Eliminar";
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnEliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // ListadoProductosVendidos
             // 
@@ -113,14 +128,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ListProducts);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "ListadoProductosVendidos";
             this.Text = "ListadoProductosVendidos";
             this.Load += new System.EventHandler(this.ListadoProductosVendidos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ListProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,12 +145,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ListProducts;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdVenta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Editar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Eliminar;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
     }
 }
