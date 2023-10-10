@@ -19,7 +19,7 @@ namespace ProyectoEntregable.Views.ProductSoldEdit
         }
         private void EditSoldProduct_Load(object sender, EventArgs e)
         {
-            this.product.Text = _soldProduct.IdProducto.ToString();
+            this.txt_product.Text = _soldProduct.IdProducto.ToString();
             this.txt_idSold.Text = _soldProduct.IdVenta.ToString();
             this.num_stock.Value = _soldProduct.Stock;
         }
@@ -27,11 +27,11 @@ namespace ProyectoEntregable.Views.ProductSoldEdit
         private void btn_save_Click(object sender, EventArgs e)
         {
 
-            _soldProduct.IdProducto = int.Parse(txt_product.Text);
             _soldProduct.Stock = (int)num_stock.Value;
             _soldProduct.IdVenta = int.Parse(txt_idSold.Text);
+            _soldProduct.IdProducto = int.Parse(txt_product.Text);
 
-            ProductoVendidoContext.CrearProductoVendido(_soldProduct);
+            ProductoVendidoContext.ModificarProductoVendido(_soldProduct);
             MessageBox.Show("Se grabo Correctamente");
         }
     }

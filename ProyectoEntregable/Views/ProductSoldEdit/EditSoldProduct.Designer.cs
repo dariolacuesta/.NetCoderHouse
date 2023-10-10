@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_save = new System.Windows.Forms.Button();
-            this.product = new System.Windows.Forms.Label();
+            this.lbl_product = new System.Windows.Forms.Label();
             this.txt_stock = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_product = new System.Windows.Forms.TextBox();
@@ -50,15 +50,15 @@
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // product
+            // lbl_product
             // 
-            this.product.AutoSize = true;
-            this.product.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.product.Location = new System.Drawing.Point(274, 58);
-            this.product.Name = "product";
-            this.product.Size = new System.Drawing.Size(111, 25);
-            this.product.TabIndex = 1;
-            this.product.Text = "Id Producto";
+            this.lbl_product.AutoSize = true;
+            this.lbl_product.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_product.Location = new System.Drawing.Point(274, 58);
+            this.lbl_product.Name = "lbl_product";
+            this.lbl_product.Size = new System.Drawing.Size(111, 25);
+            this.lbl_product.TabIndex = 1;
+            this.lbl_product.Text = "Id Producto";
             // 
             // txt_stock
             // 
@@ -116,7 +116,7 @@
             this.Controls.Add(this.txt_product);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_stock);
-            this.Controls.Add(this.product);
+            this.Controls.Add(this.lbl_product);
             this.Controls.Add(this.btn_save);
             this.ForeColor = System.Drawing.Color.Cornsilk;
             this.Name = "EditSoldProduct";
@@ -131,7 +131,7 @@
         #endregion
 
         private System.Windows.Forms.Button btn_save;
-        private System.Windows.Forms.Label product;
+        private System.Windows.Forms.Label lbl_product;
         private System.Windows.Forms.Label txt_stock;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_product;
