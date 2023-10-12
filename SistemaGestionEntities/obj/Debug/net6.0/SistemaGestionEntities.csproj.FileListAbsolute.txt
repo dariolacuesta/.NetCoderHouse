@@ -1,0 +1,11 @@
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.deps.json
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.dll
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\bin\Debug\net6.0\SistemaGestionEntities.pdb
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.GeneratedMSBuildEditorConfig.editorconfig
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfoInputs.cache
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.AssemblyInfo.cs
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.csproj.CoreCompileInputs.cache
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.dll
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\obj\Debug\net6.0\refint\SistemaGestionEntities.dll
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\obj\Debug\net6.0\SistemaGestionEntities.pdb
+G:\Desarrollo\CoderHouse\C#\.NetCoderHouse\SistemaGestionEntities\obj\Debug\net6.0\ref\SistemaGestionEntities.dll
